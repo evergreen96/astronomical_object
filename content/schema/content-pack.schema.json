@@ -22,7 +22,7 @@
       "required": ["id", "category"],
       "properties": {
         "id": { "type": "string", "minLength": 1, "maxLength": 80 },
-        "category": { "enum": ["western_zodiac", "korean_sky"] },
+        "category": { "enum": ["western_zodiac", "korean_sky", "russian_folk_sky"] },
         "objectIds": {
           "type": "array",
           "maxItems": 8,
