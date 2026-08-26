@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": 2,
+  "publishedAt": "2026-08-26T12:50:51Z",
+  "cards": [
+    {
+      "id": "zodiac-origin-babylon",
+      "category": "western_zodiac",
+      "eyebrowKo": "황도 이야기",
+      "eyebrowEn": "Zodiac story",
+      "titleKo": "황도 12궁은 왜 열두 개일까?",
+      "titleEn": "Why are there twelve zodiac signs?",
+      "bodyKo": "황도대는 태양이 별을 배경으로 지나가는 길에서 시작됐습니다. 고대 바빌로니아에서는 달력의 열두 달에 맞춰 이 길을 열두 구간으로 정리했고, 이 체계가 오늘날의 황도 12궁으로 이어졌습니다.",
+      "bodyEn": "The zodiac began with the path the Sun appears to trace against the stars. Ancient Babylonians organized that path into twelve sections to match their twelve-month calendar, forming the basis of today's zodiac.",
+      "sources": ["https://www.iau.org/IAU/IAU/Astronomy-FAQs/FAQs.aspx"],
+      "priority": 20
+    },
+    {
+      "id": "zodiac-ophiuchus",
+      "category": "western_zodiac",
+      "objectIds": ["Oph"],
+      "focusKind": "Constellation",
+      "eyebrowKo": "황도 이야기",
+      "eyebrowEn": "Zodiac story",
+      "titleKo": "태양이 지나는 열세 번째 별자리",
+      "titleEn": "The thirteenth constellation on the Sun's path",
+      "bodyKo": "실제 하늘에서 태양은 전통적인 열두 별자리뿐 아니라 뱀주인자리도 통과합니다. 별자리의 공식 경계는 크기가 서로 달라 태양이 각 별자리에 머무는 기간도 같지 않습니다.",
+      "bodyEn": "In the real sky, the Sun passes through Ophiuchus as well as the traditional twelve zodiac constellations. Their official boundaries have different sizes, so the Sun does not spend equal time in each one.",
+      "sources": ["https://www.iau.org/IAU/IAU/Astronomy-FAQs/FAQs.aspx"],
+      "priority": 20
+    },
+    {
+      "id": "zodiac-birthday-daylight",
+      "category": "western_zodiac",
+      "eyebrowKo": "실제 밤하늘",
+      "eyebrowEn": "The real night sky",
+      "titleKo": "생일 무렵 내 별자리가 잘 안 보이는 이유",
+      "titleEn": "Why your sign is hard to see near your birthday",
+      "bodyKo": "생일 별자리는 그 시기에 태양과 비슷한 방향에 놓입니다. 그래서 낮에는 태양빛에 가려지고, 밤에는 지평선 아래에 있는 경우가 많습니다. 약 반년 뒤에는 태양 반대편 밤하늘에 놓여 관측하기 쉬워집니다.",
+      "bodyEn": "Around your birthday, your zodiac constellation lies near the same direction as the Sun. Daylight hides it, and it is often below the horizon at night. Roughly six months later it appears opposite the Sun and is much easier to observe.",
+      "sources": ["https://www.iau.org/IAU/IAU/Astronomy-FAQs/FAQs.aspx"],
+      "priority": 20
+    },
+    {
+      "id": "zodiac-sign-vs-constellation",
+      "category": "western_zodiac",
+      "eyebrowKo": "천문학과 문화",
+      "eyebrowEn": "Astronomy and culture",
+      "titleKo": "별자리 운세와 실제 별자리는 다릅니다",
+      "titleEn": "A zodiac sign is not the same as a constellation",
+      "bodyKo": "운세의 황도 12궁은 하늘을 같은 크기의 열두 구간으로 나눈 문화적 체계입니다. 천문학의 별자리는 국제천문연맹이 정한 실제 하늘의 영역이며 모양과 면적이 모두 다릅니다.",
+      "bodyEn": "Astrological signs are a cultural system that divides the zodiac into twelve equal sections. Astronomical constellations are real sky regions defined by the International Astronomical Union, each with a different shape and area.",
+      "sources": ["https://www.iau.org/IAU/IAU/Astronomy-FAQs/FAQs.aspx"],
+      "priority": 20
+    },
+    {
+      "id": "korean-sky-cheonsang-map",
+      "category": "korean_sky",
+      "eyebrowKo": "한국의 하늘",
+      "eyebrowEn": "Korean sky heritage",
+      "titleKo": "돌에 새긴 조선의 밤하늘",
+      "titleEn": "Joseon's night sky carved in stone",
+      "bodyKo": "천상열차분야지도는 1395년에 제작된 석각 천문도입니다. 중앙의 원형 천문도에 삼원과 이십팔수를 포함한 1,467개의 별을 기록해, 조선 초기에 관측하고 이해한 하늘을 전합니다.",
+      "bodyEn": "Cheonsang Yeolcha Bunyajido is a stone star chart made in 1395. Its circular map records 1,467 stars, including the Three Enclosures and Twenty-eight Mansions, preserving how early Joseon observed and understood the sky.",
+      "sources": ["https://www.museum.go.kr/MUSEUM/contents/M0201040300.do?relicId=17717&schM=view&showHallId=759"],
+      "priority": 20
+    },
+    {
+      "id": "korean-sky-three-enclosures",
+      "category": "korean_sky",
+      "eyebrowKo": "삼원",
+      "eyebrowEn": "Three Enclosures",
+      "titleKo": "북극성을 둘러싼 하늘의 궁궐",
+      "titleEn": "A celestial court around the north pole",
+      "bodyKo": "전통 동아시아 천문도는 북쪽 하늘의 중심부를 자미원·태미원·천시원이라는 세 영역으로 나눴습니다. 별을 단순한 그림이 아니라 궁궐과 관청, 시장이 있는 질서 잡힌 세계로 읽었습니다.",
+      "bodyEn": "Traditional East Asian star maps divided the central northern sky into the Purple Forbidden, Supreme Palace and Heavenly Market Enclosures. The stars formed an ordered world of palaces, offices and markets rather than a single picture.",
+      "sources": ["https://www.museum.go.kr/MUSEUM/contents/M0201040300.do?relicId=17717&schM=view&showHallId=759", "https://hk.space.museum/en/web/spm/resources/teachers-corner/constellations-and-myths/glossary-of-chinese-star-regions-asterisms-and-star-names.html"],
+      "priority": 20
+    },
+    {
+      "id": "korean-sky-twenty-eight-mansions",
+      "category": "korean_sky",
+      "eyebrowKo": "이십팔수",
+      "eyebrowEn": "Twenty-eight Mansions",
+      "titleKo": "달의 길을 따라 나눈 스물여덟 구역",
+      "titleEn": "Twenty-eight regions along the Moon's path",
+      "bodyKo": "이십팔수는 달과 태양, 행성이 움직이는 길 주변의 하늘을 스물여덟 구역으로 나눈 체계입니다. 천상열차분야지도에서는 이 구역들이 방위와 계절, 지상의 영역을 이해하는 기준으로 쓰였습니다.",
+      "bodyEn": "The Twenty-eight Mansions divide the sky along the paths of the Moon, Sun and planets into twenty-eight regions. In Cheonsang Yeolcha Bunyajido they helped organize directions, seasons and corresponding regions on Earth.",
+      "sources": ["https://www.museum.go.kr/MUSEUM/contents/M0201040300.do?relicId=17717&schM=view&showHallId=759", "https://hk.space.museum/en/web/spm/resources/teachers-corner/constellations-and-myths/glossary-of-chinese-star-regions-asterisms-and-star-names.html"],
+      "priority": 20
+    },
+    {
+      "id": "korean-sky-heaven-and-land",
+      "category": "korean_sky",
+      "eyebrowKo": "하늘과 땅",
+      "eyebrowEn": "Sky and land",
+      "titleKo": "옛 천문도는 하늘과 땅을 함께 읽었습니다",
+      "titleEn": "Old star maps read the sky and land together",
+      "bodyKo": "천상열차분야지도의 ‘차’는 목성의 운행을 기준으로 하늘을 나눈 열두 영역이고, ‘분야’는 각 하늘 영역에 대응한다고 본 지상의 지역입니다. 천문도는 관측 기록인 동시에 나라와 시간을 해석하는 지도였습니다.",
+      "bodyEn": "In the chart's title, the celestial divisions are twelve sky regions associated with Jupiter's motion, while the terrestrial fields are the regions on Earth believed to correspond to them. The map joined observation with ideas about time and governance.",
+      "sources": ["https://www.museum.go.kr/MUSEUM/contents/M0201040300.do?relicId=17717&schM=view&showHallId=759"],
+      "priority": 20
+    }
+  ]
+}

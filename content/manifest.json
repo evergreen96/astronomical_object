@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": 2,
+  "minAppVersionCode": 12,
+  "packUrl": "https://raw.githubusercontent.com/evergreen96/astronomical_object/main/content/packs/content-v2.json",
+  "sha256": "ce8fbfb3de113458d3623ea78dc85dc1ae30386b4f0ddca852ea373c25632e7a",
+  "publishedAt": "2026-08-26T12:50:51Z"
+}

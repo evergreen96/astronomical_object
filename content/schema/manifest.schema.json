@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/evergreen96/astronomical_object/main/content/schema/manifest.schema.json",
+  "title": "StarSky content manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "contentVersion",
+    "minAppVersionCode",
+    "packUrl",
+    "sha256",
+    "publishedAt"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "contentVersion": { "type": "integer", "minimum": 1 },
+    "minAppVersionCode": { "type": "integer", "minimum": 1 },
+    "packUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://raw\\.githubusercontent\\.com/evergreen96/astronomical_object/"
+    },
+    "sha256": { "type": "string", "pattern": "^[0-9a-fA-F]{64}$" },
+    "publishedAt": { "type": "string", "format": "date-time" }
+  }
+}
