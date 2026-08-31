@@ -22,13 +22,18 @@
       "required": ["id", "category"],
       "properties": {
         "id": { "type": "string", "minLength": 1, "maxLength": 80 },
-        "category": { "enum": ["western_zodiac", "korean_sky", "russian_folk_sky"] },
+        "category": { "enum": ["western_zodiac", "zodiac_sign", "monthly_sky", "sky_event", "korean_sky", "russian_folk_sky"] },
         "objectIds": {
           "type": "array",
           "maxItems": 8,
           "items": { "type": "string", "minLength": 1, "maxLength": 80 }
         },
         "focusKind": { "enum": ["", "Star", "Constellation", "Planet", "SunMoon", "Dso"] },
+        "targets": {
+          "type": "array",
+          "maxItems": 8,
+          "items": { "$ref": "#/$defs/target" }
+        },
         "eyebrowKo": { "type": "string" },
         "eyebrowEn": { "type": "string" },
         "eyebrowRu": { "type": "string" },
@@ -43,6 +48,10 @@
           "uniqueItems": true,
           "items": { "type": "integer", "minimum": 1, "maximum": 12 }
         },
+        "activeFromMonthDay": { "type": "string", "pattern": "^(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$" },
+        "activeUntilMonthDay": { "type": "string", "pattern": "^(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$" },
+        "activeFrom": { "type": "string", "format": "date" },
+        "activeUntil": { "type": "string", "format": "date" },
         "image": { "$ref": "#/$defs/image" },
         "sources": {
           "type": "array",
@@ -55,6 +64,22 @@
       "anyOf": [
         { "required": ["titleKo", "bodyKo"] },
         { "required": ["titleEn", "bodyEn"] }
+      ]
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["objectId", "focusKind"],
+      "properties": {
+        "objectId": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "focusKind": { "enum": ["Star", "Constellation", "Planet", "SunMoon", "Dso"] },
+        "labelKo": { "type": "string", "maxLength": 180 },
+        "labelEn": { "type": "string", "maxLength": 180 },
+        "labelRu": { "type": "string", "maxLength": 180 }
+      },
+      "anyOf": [
+        { "required": ["labelKo"] },
+        { "required": ["labelEn"] }
       ]
     },
     "image": {
