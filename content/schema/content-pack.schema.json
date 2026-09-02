@@ -50,6 +50,7 @@
         },
         "activeFromMonthDay": { "type": "string", "pattern": "^(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$" },
         "activeUntilMonthDay": { "type": "string", "pattern": "^(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$" },
+        "previewFrom": { "type": "string", "format": "date" },
         "activeFrom": { "type": "string", "format": "date" },
         "activeUntil": { "type": "string", "format": "date" },
         "image": { "$ref": "#/$defs/image" },

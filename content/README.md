@@ -23,7 +23,7 @@ SHA-256과 스키마를 검증한다. 실패하면 마지막 정상 캐시 또�
 
 - `zodiac_sign`: 열대황도 12궁을 `activeFromMonthDay`/`activeUntilMonthDay`로 정확히 한 개 선택한다. 실제 IAU 별자리 경계와 다른 체계임을 본문에 밝힌다.
 - `monthly_sky`: `activeMonths`로 월별 북반구 중위도 추천 묶음을 고르고, 여러 `targets`를 각각 실제 하늘에서 열 수 있다.
-- `sky_event`: `activeFrom`/`activeUntil` 절대 날짜 안에서만 노출한다. 연도별 유성우·식·관측 캠페인은 새 팩에서 교체한다.
+- `sky_event`: `previewFrom`부터 `activeFrom` 전날까지는 예정 이벤트로, `activeFrom`/`activeUntil` 안에서는 진행 중 이벤트로 노출한다. 연도별 유성우·식·관측 캠페인은 새 팩에서 교체한다.
 - `western_zodiac`: 점성술의 단정이나 운세가 아니라 실제 하늘과 문화사를 연결한다.
 - `korean_sky`: 천상열차분야지도, 삼원, 이십팔수처럼 출처를 확인할 수 있는 내용을 쓴다.
 - `russian_folk_sky`: 러시아계 민속 자료의 범위를 명시하고, 여러 민족의 전승을 러시아 전체의 단일 전통으로 일반화하지 않는다.
