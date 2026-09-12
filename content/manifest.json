@@ -3,6 +3,6 @@
   "contentVersion": 9,
   "minAppVersionCode": 12,
   "packUrl": "https://raw.githubusercontent.com/evergreen96/astronomical_object/main/content/packs/content-v9.json",
-  $130e43f6145f47dc009ce8b6952c09e3bdb1d60ef7a8cbcdb786cd8aa7dd7a58d",
+  "sha256": "30e43f6145f47dc009ce8b6952c09e3bdb1d60ef7a8cbcdb786cd8aa7dd7a58d",
   "publishedAt": "2026-09-12T12:30:00Z"
 }
