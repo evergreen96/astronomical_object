@@ -14,6 +14,12 @@ SHA-256과 스키마를 검증한다. 실패하면 마지막 정상 캐시 또�
 4. `manifest.json`의 `contentVersion`, `packUrl`, `sha256`, `publishedAt`을 같은 값으로 바꾼다.
 5. 두 파일을 함께 검토한 뒤 `main` 브랜치에 반영한다.
 
+배포 직전에는 반드시 팩 내부의 `contentVersion`이 manifest의 값과 같은지 확인하고,
+GitHub에 push된 원격 파일을 다시 받아 SHA-256을 계산해 manifest의 `sha256`과 비교한다.
+로컬 Windows 작업 사본의 CRLF 해시를 manifest에 기록하면 원격 LF 파일과 달라져
+`sha256 mismatch`가 발생할 수 있다. 파일명과 manifest를 바꾼 뒤에는 JSON 파싱,
+원격 pack의 내부 버전, 원격 pack SHA를 모두 확인한 다음 앱 새로고침으로 검증한다.
+
 현재 규격은 `schema/content-pack.schema.json`과 `schema/manifest.schema.json`에 있다.
 이미지는 저장소의 `images/`에 추가한 뒤 `raw.githubusercontent.com` HTTPS 주소를 `image.url`에 넣는다.
 이미지에는 원 출처, 라이선스, 크레디트를 반드시 기록하며 비영리 전용 라이선스와 GIF는
