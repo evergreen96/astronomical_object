@@ -53,6 +53,13 @@
         "previewFrom": { "type": "string", "format": "date" },
         "activeFrom": { "type": "string", "format": "date" },
         "activeUntil": { "type": "string", "format": "date" },
+        "visualKind": { "enum": ["", "meteor_shower", "comet"] },
+        "visualTargetId": { "type": "string", "maxLength": 80 },
+        "visualPreviewAtUtc": { "type": "string", "format": "date-time" },
+        "radiantRaDeg": { "type": "number", "minimum": 0, "exclusiveMaximum": 360 },
+        "radiantDecDeg": { "type": "number", "minimum": -90, "maximum": 90 },
+        "notificationEnabled": { "type": "boolean", "default": true },
+        "notificationAt": { "type": "string", "format": "date-time", "description": "Optional sky-event reminder instant, including UTC offset. Defaults to activeFrom at 09:00 in the device time zone." },
         "image": { "$ref": "#/$defs/image" },
         "sources": {
           "type": "array",
@@ -65,6 +72,19 @@
       "anyOf": [
         { "required": ["titleKo", "bodyKo"] },
         { "required": ["titleEn", "bodyEn"] }
+      ],
+      "allOf": [
+        {
+          "if": { "required": ["radiantRaDeg"] },
+          "then": {
+            "required": ["radiantDecDeg", "visualKind", "visualTargetId", "visualPreviewAtUtc"],
+            "properties": { "visualKind": { "const": "meteor_shower" } }
+          }
+        },
+        {
+          "if": { "required": ["radiantDecDeg"] },
+          "then": { "required": ["radiantRaDeg"] }
+        }
       ]
     },
     "target": {
